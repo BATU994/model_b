@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .login input {
+        width: 150px;
+      }
+      .login {
+        position: absolute;
+        gap: 5px;
+        right: 40%;
+      }
+      .login button {
+        width: 158px;
+      }
+      .sign_up input {
+        width: 150px;
+      }
+      .sign_up {
+        gap: 5px;
+        position: absolute;
+        right: 10%;
+      }
+      .sign_up button {
+        width: 158px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+      "
+    >
+      <h2>API</h2>
+      <ul style="display: flex; list-style: none; gap: 10px">
+        <li onclick="logPop()"><a href="">Login</a></li>
+        <li onclick="signPop()"><a href="">Sign up</a></li>
+        <li><a href="./workspace.html">Workspaces</a></li>
+        <li><a href="">API Tokens</a></li>
+        <li><a href="">Billing Quotas</a></li>
+        <li><a href="">Bills</a></li>
+      </ul>
+    </nav>
+    <div class="login" style="flex-direction: column">
+      <input type="text" placeholder="user" id="user" />
+      <input type="text" placeholder="Password" id="password" />
+      <button id="logIn">Log In</button>
+    </div>
+    <div class="sign_up" style="flex-direction: column">
+      <input type="text" placeholder="user" id="user_create" />
+      <input type="text" placeholder="Password" id="password_create" />
+      <button id="submit_button">Sign In</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsonwebtoken@9.0.2/dist/index.umd.min.js"></script>
+    <script src="index.js" defer></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
