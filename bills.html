@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    tr {
+      display: flex;
+      gap: 20px;
+    }
+    .header {
+      gap: 20px;
+    }
+    th {
+      width: 140px;
+    }
+  </style>
+  <body>
+    <ul style="display: flex; list-style: none; gap: 10px">
+      <li onclick="logPop()"><a href="">Login</a></li>
+      <li onclick="signPop()"><a href="">Sign up</a></li>
+      <li><a href="./workspace.html">Workspaces</a></li>
+      <li><a href="">API Tokens</a></li>
+      <li><a href="">Billing Quotas</a></li>
+      <li><a href="">Bills</a></li>
+    </ul>
+
+    <table>
+      <tr class="header">
+        <th>Token</th>
+        <th>Time</th>
+        <th>Per sec</th>
+        <th>Total</th>
+      </tr>
+      <table id="devel">
+        <th>Development Token</th>
+      </table>
+      <table id="produc">
+        <th>Production Token</th>
+      </table>
+    </table>
+
+    <h1 id="sum"></h1>
+    <script src="app.js"></script>
+  </body>
+</html>
